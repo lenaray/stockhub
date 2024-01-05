@@ -21,6 +21,8 @@
 }
 
 .ticker-grid {
+    display: flex;
+    flex-direction: column;
     margin-top: 20px;
     margin-left: 20px;
 }
@@ -32,6 +34,7 @@
     width: 200px;
     background-color: #f7f7f7;
     transition: all 0.3s;
+    position: relative;
 }
 
 .ticker-box:hover {
@@ -48,4 +51,43 @@
     margin-top: 10px;
     font-size: 14px;
     color: #555;
+}
+
+.expand-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #317031;
+}
+
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+}
+
+.date-filter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.start-date,
+.end-date {
+    margin-right: 10px;
 }
